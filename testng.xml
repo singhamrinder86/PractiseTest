@@ -9,9 +9,7 @@
 </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      
-      <class name="AutoTest.LandingPage"/>
-      <class name="AutoTest.AppTest"/>
+      <class name="AutoTest.LandingPage"/> 
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

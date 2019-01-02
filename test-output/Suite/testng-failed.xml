@@ -9,6 +9,7 @@
       <class name="AutoTest.LandingPage">
         <methods>
           <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="basePageNavigation" invocation-numbers="0"/>
         </methods>
       </class> <!-- AutoTest.LandingPage -->
     </classes>

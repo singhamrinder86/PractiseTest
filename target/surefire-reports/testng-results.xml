@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="78" started-at="2019-01-01T20:46:36Z" finished-at="2019-01-01T20:46:36Z">
+  <suite name="Suite" duration-ms="23735" started-at="2019-01-02T00:01:11Z" finished-at="2019-01-02T00:01:35Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="78" started-at="2019-01-01T20:46:36Z" finished-at="2019-01-01T20:46:36Z">
-      <class name="AutoTest.AppTest">
-        <test-method status="PASS" signature="shouldAnswerWithTrue()[pri:0, instance:shouldAnswerWithTrue(AutoTest.AppTest)]" name="shouldAnswerWithTrue" duration-ms="0" started-at="2019-01-01T15:46:36Z" finished-at="2019-01-01T15:46:36Z">
+    <test name="Test" duration-ms="23735" started-at="2019-01-02T00:01:11Z" finished-at="2019-01-02T00:01:35Z">
+      <class name="AutoTest.LandingPage">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:AutoTest.LandingPage@353d0772]" name="basePageNavigation" duration-ms="7818" started-at="2019-01-01T19:01:11Z" data-provider="getData" finished-at="2019-01-01T19:01:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[plasticqa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1testers2]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAnswerWithTrue -->
-      </class> <!-- AutoTest.AppTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:AutoTest.LandingPage@353d0772]" name="basePageNavigation" duration-ms="15901" started-at="2019-01-01T19:01:19Z" data-provider="getDeliveryData" finished-at="2019-01-01T19:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[39 Parliament Street, Toronto]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+      </class> <!-- AutoTest.LandingPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

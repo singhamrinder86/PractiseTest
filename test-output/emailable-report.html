@@ -31,46 +31,103 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">18.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">15.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">AutoTest.LandingPage</td><td><a href="#m1"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1546375491858</td><td class="numi">10256</td></tr>
-<tr><th colspan="4">Test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">AutoTest.LandingPage</td><td><a href="#m2"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1546375484462</td><td class="numi">7393</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">AutoTest.LandingPage</td><td><a href="#m1"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1546387198509</td><td class="numi">6585</td></tr>
+<tr><th colspan="4">Default test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">AutoTest.LandingPage</td><td><a href="#m2"><b>basePageNavigation</b>  </a></td><td class="numi">1</td><td>1546387189924</td><td class="numi">8581</td></tr>
 </table>
-<h1>Test</h1>
+<h1>Default test</h1>
 <h2 id="m1">AutoTest.LandingPage:basePageNavigation</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>39 Parliament Street, Toronto</td>
 </tr>
 <tr><td style="padding-left:3em" colspan="1">
-<p>element not visible
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
+<p>java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:8112
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;AMRINDER&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_161&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\Amrinder\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 71.0.3578.98, webStorageEnabled: true}
-Session ID: 1e07483f634166ccd182d4470f6cb2e7</p>
-sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:92)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pageObjects.PPHome.getpopUp(PPHome.java:23)
+<br/>at AutoTest.LandingPage.basePageNavigation(LandingPage.java:62)
+<br/>25 lines not shown
+<p>Caused by Failed to connect to localhost/0:0:0:0:0:0:0:1:8112</p>
+okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+<br/>at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+<br/>at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+<br/>at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+<br/>at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
 <br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 <br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-<br/>at AutoTest.LandingPage.basePageNavigation(LandingPage.java:73)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pageObjects.PPHome.getpopUp(PPHome.java:23)
+<br/>at AutoTest.LandingPage.basePageNavigation(LandingPage.java:62)
+<br/>25 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+<br/>at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.PlainSocketImpl.connect(Unknown Source)
+<br/>at java.net.SocksSocketImpl.connect(Unknown Source)
+<br/>at java.net.Socket.connect(Unknown Source)
+<br/>at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+<br/>at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+<br/>at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+<br/>at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+<br/>at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+<br/>at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:155)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+<br/>at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+<br/>at pageObjects.PPHome.getpopUp(PPHome.java:23)
+<br/>at AutoTest.LandingPage.basePageNavigation(LandingPage.java:62)
 <br/>25 lines not shown
 </td></tr>
 </table>
