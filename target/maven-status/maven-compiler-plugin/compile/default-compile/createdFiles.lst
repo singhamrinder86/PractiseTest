@@ -1,4 +1,5 @@
-pageObjects\Gmail.class
-AutoTest\App.class
-resources\base.class
-pageObjects\PPHome.class
+AutoTest/App.class
+pageObjects/HomeSignIn.class
+resources/base.class
+pageObjects/PPHome.class
+pageObjects/Gmail.class

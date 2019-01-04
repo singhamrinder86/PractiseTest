@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="23735" started-at="2019-01-02T00:01:11Z" finished-at="2019-01-02T00:01:35Z">
+  <suite started-at="2019-01-04T14:22:25Z" name="Suite" finished-at="2019-01-04T14:22:55Z" duration-ms="29913">
     <groups>
     </groups>
-    <test name="Test" duration-ms="23735" started-at="2019-01-02T00:01:11Z" finished-at="2019-01-02T00:01:35Z">
+    <test started-at="2019-01-04T14:22:25Z" name="Test" finished-at="2019-01-04T14:22:55Z" duration-ms="29913">
       <class name="AutoTest.LandingPage">
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:AutoTest.LandingPage@353d0772]" name="basePageNavigation" duration-ms="7818" started-at="2019-01-01T19:01:11Z" data-provider="getData" finished-at="2019-01-01T19:01:19Z">
+        <test-method signature="basePageNavigation(java.lang.String, java.lang.String)[pri:0, instance:AutoTest.LandingPage@2654635]" started-at="2019-01-04T09:22:25Z" name="basePageNavigation" data-provider="getData" finished-at="2019-01-04T09:22:32Z" duration-ms="6874" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String)[pri:0, instance:AutoTest.LandingPage@353d0772]" name="basePageNavigation" duration-ms="15901" started-at="2019-01-01T19:01:19Z" data-provider="getDeliveryData" finished-at="2019-01-01T19:01:35Z">
+        <test-method signature="basePageNavigation(java.lang.String)[pri:0, instance:AutoTest.LandingPage@2654635]" started-at="2019-01-04T09:22:32Z" name="basePageNavigation" data-provider="getDeliveryData" finished-at="2019-01-04T09:22:48Z" duration-ms="16697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,6 +34,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
+        <test-method signature="basePageNavigation1(java.lang.String, java.lang.String)[pri:0, instance:AutoTest.LandingPage@2654635]" started-at="2019-01-04T09:22:48Z" name="basePageNavigation1" data-provider="getSignInData" finished-at="2019-01-04T09:22:55Z" duration-ms="6322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ppv2test@yopmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bbbbbb1$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation1 -->
       </class> <!-- AutoTest.LandingPage -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

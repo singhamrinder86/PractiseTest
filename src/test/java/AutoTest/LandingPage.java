@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageObjects.Gmail;
+import pageObjects.HomeSignIn;
 import pageObjects.PPHome;
 import resources.base;
 	
@@ -29,6 +30,16 @@ public class LandingPage extends base {
 		Gmail g=new Gmail(driver);
 		g.getGmailLogin().sendKeys(Username); //creating object to that class (Gmail) and invoke methods
 		g.getNext().click();
+		
+		try  
+		{ 
+			Thread.sleep(3000);//wait for 3 seconds 
+		} 
+		catch (InterruptedException e) 
+		{ 
+			e.printStackTrace(); 
+		} 
+		
 		g.getPassword().sendKeys(Password);
 		g.getSignIn().click();
 		log.info("GMail login passed");
@@ -81,7 +92,11 @@ public class LandingPage extends base {
 			{ 
 				e.printStackTrace(); 
 			}
+			
+			log.info("Delivery address validated");
 			p.getgo().click();
+			p.getLogIn().click();
+			
 		}
 	
 	@DataProvider
@@ -96,4 +111,46 @@ public class LandingPage extends base {
 		return data;
 		
 	} 
+	
+	@Test(priority=3, dataProvider="getSignInData")
+	public void basePageNavigation1(String email, String pass) throws IOException
+	{
+		HomeSignIn hs=new HomeSignIn(driver);
+		
+		try  
+		{ 
+			Thread.sleep(3000);//wait for 3 seconds 
+		} 
+		catch (InterruptedException e) 
+		{ 
+			e.printStackTrace(); 
+		}
+		
+		hs.getEmail().sendKeys(email);
+		hs.getPassword().sendKeys(pass);
+		
+		try  
+		{ 
+			Thread.sleep(3000);//wait for 3 seconds 
+		} 
+		catch (InterruptedException e) 
+		{ 
+			e.printStackTrace(); 
+		}
+
+		hs.getSignin().click();
+		log.info("PP user login successful");
+	}
+	
+	@DataProvider
+	public Object[][] getSignInData()
+	{
+		Object[][] data = new Object[1][2]; 
+		
+		//0th row
+		data[0][0]="ppv2test@yopmail.com";
+		data[0][1]="bbbbbb1$";
+		return data; 
+	}
+	
 }

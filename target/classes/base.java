@@ -21,14 +21,14 @@ public class base {
 	public WebDriver initializeDriver() throws IOException
 	{
 		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\Amrinder\\PPPhoenix\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream("/Users/amrindersingh/Documents/PractiseTest/src/main/java/resources/data.properties");
 		
 		prop.load(fis);
 		String browserName=prop.getProperty("browser");
 		
 		if(browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "F:\\Study Material\\Sunny Bhullar\\Work\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "/Users/amrindersingh/eclipse-workspace/Test/chromedriver");
 			driver=new ChromeDriver();
 		}
 		
@@ -50,6 +50,6 @@ public class base {
 	{
 
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileHandler.copy(src, new File("C://Users//Amrinder//PPPhoenix//Screenshots//screenshot.png"));
-	}
+		FileHandler.copy(src, new File("/Users/amrindersingh/Desktop/screenshot.png"));
+	} 
 }

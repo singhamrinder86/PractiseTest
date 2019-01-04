@@ -1,4 +1,5 @@
-AutoTest\listeners.class
-AutoTest\LandingPage.class
-AutoTest\AppTest.class
-AutoTest\HomePage.class
+AutoTest/LandingPage.class
+AutoTest/listeners.class
+AutoTest/HomePage.class
+AutoTest/AppTest.class
+AutoTest/SignIn.class

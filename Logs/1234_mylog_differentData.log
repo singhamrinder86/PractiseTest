@@ -1,2 +1,4 @@
-18:59:53.580 [main] INFO  resources.base - Driver is initialized
-18:59:58.505 [main] INFO  resources.base - GMail login passed
+09:22:26.993 [main] INFO  resources.base - Driver is initialized
+09:22:32.146 [main] INFO  resources.base - GMail login passed
+09:22:48.599 [main] INFO  resources.base - Delivery address validated
+09:22:55.168 [main] INFO  resources.base - PP user login successful

@@ -12,6 +12,7 @@ public class PPHome {
 	By popUp=By.xpath("//*[contains(@class,'form-control')]");
 	By delivery=By.xpath("//*[contains(@class,'pac-container')]");
 	By go=By.xpath("//*[contains(text(),' GO ')]");
+	By LogIn=By.xpath("//*[contains(@href,'/user/sign-in') and @class='big']");
 	
 	
 	public PPHome(WebDriver driver) {
@@ -33,6 +34,12 @@ public class PPHome {
 	public WebElement getgo()
 	{
 		return driver.findElement(go);
+		
+	} 
+	
+	public WebElement getLogIn()
+	{
+		return driver.findElement(LogIn);
 		
 	} 
 	
